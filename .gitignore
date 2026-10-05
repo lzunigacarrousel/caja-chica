@@ -25,3 +25,7 @@ unificadosPDF/*
 # Videos de manual (binarios pesados, no son codigo)
 videos/*
 !videos/.gitkeep
+
+# Excel de facturas acumulados por registro (no se suben)
+facturasExcel/*
+!facturasExcel/.gitkeep
