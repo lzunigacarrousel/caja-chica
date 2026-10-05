@@ -1,0 +1,27 @@
+# Secreto local (no se sube)
+secrets.local.php
+.env
+.env.*
+
+# Facturas reales de empleados (3.2GB, datos personales/financieros)
+facturas/*
+!facturas/.gitkeep
+
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Credenciales de login reales de las sucursales (no se suben)
+JsonDatos/usuarios.json
+
+# Instaladores binarios (no son codigo fuente de la app)
+apps/*.apk
+
+# PDFs consolidados reales de facturas (acumulados por registro)
+unificadosPDF/*
+!unificadosPDF/.gitkeep
+
+# Videos de manual (binarios pesados, no son codigo)
+videos/*
+!videos/.gitkeep

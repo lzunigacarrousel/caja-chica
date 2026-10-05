@@ -1,0 +1,157 @@
+/* Importar fuentes de Google */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+/* Reset de márgenes y paddings para asegurar consistencia en todos los navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para el cuerpo del documento */
+body {
+  font-family: "Roboto", "Inter", sans-serif; /* Fuentes modernas y profesionales */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegurar que el footer se mantenga en la parte inferior */
+  background-color: #f8f9fa; /* Fondo gris claro para mejorar el contraste */
+}
+
+/* Contenedor principal para el contenido */
+.container {
+  flex: 1 0 auto; /* Asegura que el contenido crezca para ocupar el espacio */
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+/* Estilo para el header (barra de navegación) */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que la barra de navegación esté sobre otros elementos */
+  background-color: #343a40; /* Fondo gris oscuro */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para mayor profundidad */
+}
+
+/* Estilo para las imágenes en el header */
+header img {
+  height: 50px;
+  width: auto;
+}
+
+/* Estilo para los enlaces en el header */
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Roboto", "Inter", sans-serif;
+  transition: color 0.3s;
+}
+
+/* Efecto hover en los enlaces del header */
+header a:hover {
+  color: #007bff; /* Color azul al pasar el cursor */
+}
+
+/* Estilo para los contenedores */
+.bg-white {
+  background-color: #ffffff;
+}
+
+.rounded-lg {
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.shadow-md {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para mayor profundidad */
+}
+
+/* Estilo para el texto centrado */
+.text-center {
+  text-align: center;
+}
+
+/* Estilo para los elementos del menú */
+.menu-item a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.1rem;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  transition: color 0.3s;
+}
+
+/* Efecto hover en los enlaces del menú */
+.menu-item a:hover {
+  color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+}
+
+/* Estilo para el footer */
+footer {
+  background-color: #333; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 1rem;
+  text-align: center;
+  flex-shrink: 0; /* Asegura que el footer no se contraiga */
+}
+
+/* Estilo para el separador */
+hr {
+  border-top: 2px solid #000000;
+  margin: 1rem 0;
+}
+
+/* Responsividad */
+
+/* Dispositivos pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  header img {
+    height: 40px; /* Tamaño más pequeño para móviles */
+  }
+
+  .menu-item a {
+    font-size: 1rem; /* Ajustar tamaño de texto en móviles */
+    padding: 0.5rem; /* Reducir el relleno para dispositivos más pequeños */
+  }
+
+  .container {
+    padding: 1.5rem; /* Reducir el relleno del contenedor en móviles */
+  }
+}
+
+/* Dispositivos medianos (481px a 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  header img {
+    height: 45px; /* Tamaño intermedio para tablets */
+  }
+
+  .menu-item a {
+    font-size: 1.05rem; /* Ajuste del tamaño del texto */
+  }
+
+  .container {
+    padding: 1.75rem; /* Ajustar el relleno en tablets */
+  }
+}
+
+/* Dispositivos grandes (769px en adelante) */
+@media (min-width: 769px) {
+  header img {
+    height: 50px; /* Tamaño original para pantallas grandes */
+  }
+
+  .menu-item a {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    padding: 2rem; /* Espaciado mayor en pantallas grandes */
+  }
+}

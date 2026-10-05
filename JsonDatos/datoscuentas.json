@@ -1,0 +1,177 @@
+[
+    {
+        "id": "1",
+        "codigo": "6110814",
+        "nombre": "Utiles y enseres de limpieza"
+    },
+    {
+        "id": "2",
+        "codigo": "6110303",
+        "nombre": "Uniformes"
+    },
+    {
+        "id": "3",
+        "codigo": "6110304",
+        "nombre": "Transporte de personal"
+    },
+    {
+        "id": "4",
+        "codigo": "6111207",
+        "nombre": "Timbre de prensa"
+    },
+    {
+        "id": "5",
+        "codigo": "6111206",
+        "nombre": "Tasas municipales"
+    },
+    {
+        "id": "6",
+        "codigo": "6110608",
+        "nombre": "Servicios de transportes de valores"
+    },
+    {
+        "id": "7",
+        "codigo": "6110601",
+        "nombre": "Servicios de seguridad y vigilancia"
+    },
+    {
+        "id": "8",
+        "codigo": "6110607",
+        "nombre": "Servicios de reclutamiento de personal"
+    },
+    {
+        "id": "9",
+        "codigo": "6110609",
+        "nombre": "Servicios de Personal de apoyo"
+    },
+    {
+        "id": "10",
+        "codigo": "6110605",
+        "nombre": "Servicios de informatica"
+    },
+    {
+        "id": "11",
+        "codigo": "6110308",
+        "nombre": "Servicios de celular"
+    },
+    {
+        "id": "12",
+        "codigo": "6110603",
+        "nombre": "Servicio de fumigacion"
+    },
+    {
+        "id": "13",
+        "codigo": "6111105",
+        "nombre": "Peaje"
+    },
+    {
+        "id": "14",
+        "codigo": "6111101",
+        "nombre": "Parqueo"
+    },
+    {
+        "id": "15",
+        "codigo": "6110815",
+        "nombre": "Papeleria y utiles consumido"
+    },
+    {
+        "id": "16",
+        "codigo": "6110806",
+        "nombre": "Mensajeria"
+    },
+    {
+        "id": "17",
+        "codigo": "6110310",
+        "nombre": "Medicamentos"
+    },
+    {
+        "id": "18",
+        "codigo": "6110824",
+        "nombre": "Materiales de Trabajo"
+    },
+    {
+        "id": "19",
+        "codigo": "6110704",
+        "nombre": "Mantenimiento y reparacion vehiculos"
+    },
+    {
+        "id": "20",
+        "codigo": "6110703",
+        "nombre": "Mantenimiento y reparacion mobiliario y equipo"
+    },
+    {
+        "id": "21",
+        "codigo": "6110707",
+        "nombre": "Mantenimiento y reparacion maquinas"
+    },
+    {
+        "id": "22",
+        "codigo": "6110705",
+        "nombre": "Mantenimiento y reparacion Local"
+    },
+    {
+        "id": "23",
+        "codigo": "6110706",
+        "nombre": "Mantenimiento y reparacion juegos mecanicos y electronicos"
+    },
+    {
+        "id": "24",
+        "codigo": "6110702",
+        "nombre": "Mantenimiento y reparacion equipo de computo"
+    },
+    {
+        "id": "25",
+        "codigo": "6110708",
+        "nombre": "Mantenimiento y reparacion diversos"
+    },
+    {
+        "id": "26",
+        "codigo": "6110701",
+        "nombre": "Mantenimiento y reparacion de edificios"
+    },
+    {
+        "id": "27",
+        "codigo": "6110805",
+        "nombre": "Internet"
+    },
+    {
+        "id": "28",
+        "codigo": "6111202",
+        "nombre": "Impuesto distribucion al petroleo IDP"
+    },
+    {
+        "id": "29",
+        "codigo": "6110823",
+        "nombre": "Imagen y publicidad"
+    },
+    {
+        "id": "30",
+        "codigo": "6111106",
+        "nombre": "Hospedaje"
+    },
+    {
+        "id": "31",
+        "codigo": "6110811",
+        "nombre": "Fletes"
+    },
+    {
+        "id": "32",
+        "codigo": "6110807",
+        "nombre": "Extraccion de basura"
+    },
+    {
+        "id": "33",
+        "codigo": "6110802",
+        "nombre": "Energia electrica"
+    },
+    {
+        "id": "34",
+        "codigo": "6111103",
+        "nombre": "Alimentacion"
+    },
+    {
+        "id": "35",
+        "codigo": "6110808",
+        "nombre": "Acarreos y Encomiendas"
+    }
+]

@@ -1,0 +1,307 @@
+/* Variables CSS para colores */
+:root {
+  --primary-color: #007bff; /* Color principal para botones y elementos destacados */
+  --primary-hover: #0056b3; /* Color al hacer hover sobre los botones */
+  --background-color: #f5f5f5; /* Fondo general de la página */
+  --text-color: #ffffff; /* Color del texto en botones y encabezados */
+  --modal-bg-color: #fff; /* Color de fondo de los modales */
+  --modal-overlay-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo semitransparente para los modales */
+  --input-border-color: #ddd; /* Borde de los inputs */
+  --input-bg-color: #006b49; /* Fondo de los inputs */
+  --input-text-color: #333; /* Color de texto en los inputs */
+  --shadow-color: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* Sombras sutiles para los contenedores */
+}
+
+/* Importar fuentes de Google */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+/* Estilo global para el cuerpo y HTML */
+body,
+html {
+  font-family: "Roboto", "Inter", sans-serif; /* Fuentes profesionales y legibles */
+  background-color: var(
+    --background-color
+  ); /* Fondo suave para mejorar contraste */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Asegura que el contenido ocupe toda la pantalla */
+  display: block;
+  overflow-x: hidden; /* Previene el scroll horizontal */
+}
+
+/* Estilo para contenedor principal */
+.container {
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--modal-bg-color); /* Fondo blanco */
+  box-shadow: 0 0 10px var(--shadow-color); /* Sombra sutil */
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #343a40; /* Color oscuro */
+  padding: 10px;
+  text-align: center;
+  color: var(--text-color); /* Texto blanco */
+  width: 100%;
+}
+
+/* Estilos del encabezado */
+header.navbar {
+  background-color: #343a40; /* Fondo oscuro */
+  padding: 10px;
+  position: sticky;
+  top: 0; /* Se adhiere al tope de la página */
+  z-index: 1000; /* Asegura que esté sobre otros elementos */
+  width: 100%;
+}
+
+/* Enlaces en la navbar */
+header .navbar-section a {
+  color: var(--text-color); /* Enlaces blancos */
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Etiquetas de formulario */
+.form-label {
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Inputs de formulario */
+.form-input {
+  border: 1px solid var(--input-border-color); /* Borde del input */
+  padding: 8px;
+  border-radius: 4px; /* Bordes redondeados */
+  font-weight: bold;
+  color: var(--input-bg-color); /* Texto en los inputs */
+  text-align: center; /* Centra el texto */
+}
+
+/* Títulos de formulario */
+.form-title {
+  margin-bottom: 20px;
+}
+
+/* Contenedor del formulario con grid para adaptarse a diferentes tamaños de pantalla */
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Diseño flexible */
+  gap: 10px; /* Espacio entre los elementos */
+}
+
+/* Márgenes inferiores en grupos de formularios */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Inputs, selects y textareas dentro del formulario */
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%; /* Inputs adaptables al 100% del contenedor */
+  padding: 8px;
+  border: 1px solid var(--input-border-color); /* Bordes suaves */
+  border-radius: 4px;
+}
+
+/* Centra botones en su contenedor */
+.center-button {
+  text-align: center;
+}
+
+/* Botones personalizados */
+.btn-custom,
+.header-button,
+.footer-button,
+.modal-footer-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: var(--primary-color); /* Color principal del botón */
+  color: var(--text-color); /* Texto blanco */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Efecto hover en los botones */
+.btn-custom:hover,
+.header-button:hover,
+.footer-button:hover,
+.modal-footer-button:hover {
+  background-color: var(--primary-hover); /* Cambio de color al hacer hover */
+}
+
+/* Formulario de agregar NIT, oculto inicialmente */
+#formAgregarNit {
+  display: none;
+  margin-top: 20px;
+}
+
+/* Campos de combustible, ocultos inicialmente */
+#camposCombustible {
+  display: none;
+}
+
+/* Estilos para los modales (ventanas emergentes) */
+.modal-overlay {
+  display: none; /* Oculto inicialmente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--modal-overlay-color); /* Fondo semitransparente */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--modal-bg-color); /* Fondo del modal */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombras */
+  width: 600px;
+  max-width: 90%; /* Ancho máximo del modal */
+  text-align: center;
+  position: relative;
+}
+
+/* Botón de cierre en los modales */
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s;
+}
+
+/* Cambio de color en hover para el botón de cierre */
+.modal-close-btn:hover {
+  color: #ff0000; /* Rojo al hacer hover */
+}
+
+/* Estilos de listas dentro de los modales */
+.modal-list {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.modal-list div {
+  padding: 10px;
+  border-bottom: 1px solid var(--input-border-color); /* Separador entre elementos */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Efecto hover en los elementos de la lista */
+.modal-list div:hover {
+  background-color: #f0f0f0;
+}
+
+/* Diseño responsive: Ajustes para pantallas pequeñas (Mobile-first) */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 90%; /* Ancho adaptado a pantallas pequeñas */
+  }
+
+  .container {
+    padding: 1rem;
+    margin: 15px auto;
+  }
+}
+
+/* Scroll automático para tablas con muchos datos */
+.table-auto {
+  width: 100%; /* Ancho completo */
+  border-collapse: collapse;
+}
+
+.table-auto th,
+.table-auto td {
+  padding: 0.75rem;
+  border: 1px solid var(--input-border-color);
+  text-align: center;
+}
+
+/* Efecto zebra en las filas de la tabla */
+.table-auto tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Scroll horizontal para pantallas pequeñas */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Suficiente espacio y optimización para pantallas móviles */
+.form-input,
+.table-auto,
+.btn-custom {
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Estilos para el contenedor de botones */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.button-container button {
+  padding: 0.5rem 1rem;
+  background-color: #4f46e5;
+  color: white;
+  border-radius: 0.375rem;
+}
+
+/* Ajustes para pantallas móviles */
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Evitar problemas de scroll cuando el modal está activo */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Mejora el modal en pantallas pequeñas */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 100%;
+    padding: 1rem;
+  }
+}

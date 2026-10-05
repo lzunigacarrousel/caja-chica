@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cuerpo */
+body {
+  font-family: "Roboto", "Inter", sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  background-color: #343a40;
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  height: 40px;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+header a:hover {
+  color: #007bff;
+}
+
+/* Espaciado del contenido */
+.content {
+  flex: 1;
+  margin-top: 80px;
+}
+
+/* Botones */
+.btn {
+  font-size: 16px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-error {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-error:hover {
+  background-color: #c82333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Tablas */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  max-height: 400px;
+  margin-bottom: 1.5rem;
+}
+
+.table-auto th,
+.table-auto td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.table-auto thead {
+  background-color: #f2f2f2;
+}
+
+.table-auto tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Formularios */
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+select.form-select,
+input[type="file"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+select.form-select:focus,
+input[type="file"]:focus {
+  border-color: #007bff;
+}
+
+/* Títulos */
+h1.text-center,
+h2.text-center {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 600;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+/* Responsividad */
+
+/* Dispositivos pequeños */
+@media (max-width: 480px) {
+  header img {
+    height: 30px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .table-auto th,
+  .table-auto td {
+    padding: 0.5rem;
+  }
+}
+
+/* Dispositivos medianos */
+@media (min-width: 481px) and (max-width: 768px) {
+  header img {
+    height: 35px;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  .table-auto th,
+  .table-auto td {
+    padding: 0.65rem;
+  }
+}
+
+/* Dispositivos grandes */
+@media (min-width: 769px) {
+  header img {
+    height: 40px;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}

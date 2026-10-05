@@ -1,0 +1,184 @@
+/* Importar fuentes de Google */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+/* Reset de márgenes y paddings para asegurar consistencia en todos los navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para el cuerpo del documento */
+body {
+  font-family: "Roboto", "Inter", sans-serif; /* Fuentes modernas y profesionales */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegurar que el footer se mantenga en la parte inferior */
+  background-color: #f8f9fa; /* Fondo gris claro para mejorar el contraste */
+}
+
+/* Contenedor principal para el contenido */
+.container {
+  flex: 1 0 auto; /* Asegura que el contenido crezca para ocupar el espacio */
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+/* Estilo para el header (barra de navegación) */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que la barra de navegación esté sobre otros elementos */
+  background-color: #343a40; /* Fondo gris oscuro */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para mayor profundidad */
+}
+
+/* Estilo para las imágenes en el header */
+header img {
+  height: 50px;
+  width: auto;
+}
+
+/* Estilo para los enlaces en el header */
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Roboto", "Inter", sans-serif;
+  transition: color 0.3s;
+}
+
+/* Efecto hover en los enlaces del header */
+header a:hover {
+  color: #3b82f6; /* Color azul brillante al pasar el cursor */
+}
+
+/* Estilo para los contenedores */
+.bg-white {
+  background-color: #ffffff;
+}
+
+.rounded-lg {
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.shadow-md {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave para mayor profundidad */
+}
+
+/* Estilo para el texto centrado */
+.text-center {
+  text-align: center;
+}
+
+/* Estilo para los títulos */
+.text-primary {
+  color: #3b82f6; /* Azul brillante para títulos */
+}
+
+/* Contenedor para organizar los videos en dos columnas */
+.videos-row {
+  display: flex;
+  justify-content: space-between; /* Separar los videos horizontalmente */
+  gap: 20px; /* Espacio entre los videos */
+  flex-wrap: wrap; /* Para asegurar que los videos se adapten en pantallas pequeñas */
+  margin-bottom: 20px;
+}
+
+/* Ajustes para los contenedores de video en dos columnas */
+.video-container {
+  width: 48%; /* Ocupa el 48% del ancho para dejar espacio entre las columnas */
+  height: 350px; /* Altura fija para los videos */
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para centrar y espaciado entre botones */
+.botones-descarga {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  gap: 30px; /* Espacio entre los botones */
+  margin-top: 20px; /* Añadir margen superior para separarlo del contenido */
+}
+
+.botones-descarga a {
+  padding: 10px 20px; /* Espaciado interno en los botones */
+  border-radius: 5px; /* Bordes redondeados */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #1f2937; /* Color de fondo */
+  padding: 10px; /* Padding interno */
+  text-align: center; /* Texto centrado */
+  color: #ffffff; /* Color del texto */
+  flex-shrink: 0; /* No permitir que se encoja */
+}
+
+/* Responsividad */
+
+/* Dispositivos pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  header img {
+    height: 40px; /* Tamaño más pequeño para móviles */
+  }
+
+  .container {
+    padding: 1.5rem; /* Reducir el relleno del contenedor en móviles */
+  }
+
+  .video-container {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    height: 250px; /* Reduce la altura del video en móviles */
+  }
+}
+
+/* Dispositivos medianos (481px a 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  header img {
+    height: 45px; /* Tamaño intermedio para tablets */
+  }
+
+  .container {
+    padding: 1.75rem; /* Ajustar el relleno en tablets */
+  }
+
+  .video-container {
+    width: 100%; /* Ocupa todo el ancho en pantallas medianas */
+    height: 300px; /* Ajusta la altura en tablets */
+  }
+}
+
+/* Dispositivos grandes (769px en adelante) */
+@media (min-width: 769px) {
+  header img {
+    height: 50px; /* Tamaño original para pantallas grandes */
+  }
+
+  .container {
+    padding: 2rem; /* Espaciado mayor en pantallas grandes */
+  }
+
+  .video-container {
+    width: 48%; /* Dos columnas en pantallas grandes */
+    height: 350px; /* Altura original en pantallas grandes */
+  }
+}

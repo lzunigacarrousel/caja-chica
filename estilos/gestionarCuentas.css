@@ -1,0 +1,212 @@
+/* Importar fuente de Google */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+/* Estilo global para el cuerpo del documento */
+body {
+  font-family: "Inter", sans-serif; /* Fuente Inter aplicada */
+  background-color: #f8f9fa; /* Fondo suave para mejorar contraste */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Reset de márgenes y paddings para asegurar consistencia en todos los navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem; /* Espacio interno adicional */
+  background-color: #ffffff; /* Fondo blanco para el contenido */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilo para las tablas */
+.table-auto {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Estilo para las celdas y encabezados de las tablas */
+.table-auto th,
+.table-auto td {
+  padding: 0.75rem;
+  border: 1px solid #ddd; /* Borde claro */
+  text-align: center;
+  white-space: normal;
+}
+
+/* Estilo para el encabezado de la tabla */
+.table-auto thead {
+  background-color: #f2f2f2;
+}
+
+/* Color de fondo alternado para las filas */
+.table-auto tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Asegura que el contenido de la celda no se salga de los límites */
+.table-auto td {
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+/* Botones estándar */
+.btn {
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Botón primario (agregar y editar) */
+.btn-primary {
+  background-color: #007bff; /* Color azul */
+  color: #fff; /* Texto blanco */
+  border: none;
+}
+
+/* Efecto hover en el botón primario */
+.btn-primary:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+
+/* Botón de error (eliminar) */
+.btn-error {
+  background-color: #dc3545; /* Rojo */
+  color: #fff;
+  border: none;
+}
+
+/* Efecto hover en el botón de error */
+.btn-error:hover {
+  background-color: #c82333; /* Rojo más oscuro */
+}
+
+/* Estilo para el header (barra de navegación) */
+header {
+  background-color: #343a40; /* Fondo gris oscuro */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff; /* Texto blanco */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Asegura que siempre esté visible */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para el logo en el header */
+header img {
+  height: 50px;
+}
+
+/* Estilo para los enlaces en el header */
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Efecto hover para los enlaces del header */
+header a:hover {
+  color: #007bff; /* Azul claro */
+}
+
+/* Estilo para el footer */
+footer {
+  background-color: #343a40; /* Fondo gris oscuro */
+  color: white; /* Texto blanco */
+  padding: 1rem;
+  text-align: center;
+  flex-shrink: 0; /* Asegura que el footer no se contraiga */
+}
+
+/* Manejo de scroll horizontal en tablas */
+.overflow-x-auto {
+  overflow-x: auto; /* Scroll horizontal si es necesario */
+}
+
+/* Manejo de scroll vertical en tablas */
+.overflow-y-auto {
+  overflow-y: auto;
+  max-height: 400px; /* Limitar la altura máxima de la tabla */
+}
+
+/* Responsividad */
+
+/* Dispositivos pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem; /* Ajustar el espacio interno */
+  }
+
+  header img {
+    height: 40px; /* Tamaño más pequeño del logo en móviles */
+  }
+
+  .btn {
+    font-size: 14px; /* Botones más pequeños para dispositivos móviles */
+    padding: 0.5rem; /* Ajuste del relleno del botón */
+  }
+
+  .table-auto th,
+  .table-auto td {
+    padding: 0.5rem; /* Reducir espacio en celdas de tabla */
+  }
+
+  .table-auto {
+    font-size: 14px; /* Texto más pequeño en tablas */
+  }
+}
+
+/* Dispositivos medianos (481px a 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  header img {
+    height: 45px; /* Tamaño intermedio para tablets */
+  }
+
+  .btn {
+    font-size: 15px; /* Ajuste de tamaño de texto */
+  }
+
+  .table-auto th,
+  .table-auto td {
+    padding: 0.65rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+}
+
+/* Dispositivos grandes (769px en adelante) */
+@media (min-width: 769px) {
+  header img {
+    height: 50px; /* Tamaño original del logo */
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+}

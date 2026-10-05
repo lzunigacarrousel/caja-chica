@@ -1,0 +1,216 @@
+/* Importar fuentes de Google */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+body {
+  font-family: "Roboto", "Inter", sans-serif; /* Fuentes modernas y profesionales */
+  background-color: #f8f9fa;
+  color: #343a40;
+  padding-top: 60px; /* Ajustar según la altura de la barra de navegación */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+}
+
+.container {
+  max-width: 800px;
+  padding: 2rem;
+  margin: 2rem auto; /* Centra el contenedor */
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Encabezado */
+h2.text-center {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Grupo de formularios */
+.form-group {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+  justify-content: center;
+  gap: 10px; /* Espacio entre elementos */
+  margin-bottom: 20px;
+}
+
+/* Botones primarios */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Transición suave */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Botón de error */
+.btn-error {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-error:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* Botón secundario */
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+/* Subtítulos */
+h3 {
+  font-weight: 600;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Estilo del select */
+select.form-select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease; /* Transición suave para cambios de borde */
+}
+
+select.form-select:focus {
+  border-color: #007bff; /* Borde azul al enfocarse */
+}
+
+/* Estilo del input de archivo */
+input[type="file"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+input[type="file"]:focus {
+  border-color: #007bff;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 10px 0;
+}
+
+/* Responsividad */
+
+/* Dispositivos pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem; /* Ajuste de padding para móviles */
+  }
+
+  h2.text-center {
+    font-size: 1.25rem; /* Reducción del tamaño del encabezado en móviles */
+  }
+
+  .btn-primary,
+  .btn-error,
+  .btn-secondary {
+    font-size: 0.875rem; /* Botones más pequeños */
+    padding: 8px 15px;
+  }
+
+  .form-group {
+    gap: 5px; /* Menor espacio entre los botones en móviles */
+  }
+
+  select.form-select,
+  input[type="file"] {
+    font-size: 0.875rem; /* Ajustar tamaño del texto en móviles */
+  }
+}
+
+/* Dispositivos medianos (481px a 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    padding: 2rem; /* Ajuste del padding para tablets */
+  }
+
+  h2.text-center {
+    font-size: 1.5rem; /* Ajuste del tamaño del encabezado */
+  }
+
+  .btn-primary,
+  .btn-error,
+  .btn-secondary {
+    font-size: 1rem; /* Tamaño estándar de los botones en tablets */
+  }
+
+  .form-group {
+    gap: 8px; /* Ajuste del espacio entre elementos */
+  }
+
+  select.form-select,
+  input[type="file"] {
+    font-size: 1rem;
+  }
+}
+
+/* Dispositivos grandes (769px en adelante) */
+@media (min-width: 769px) {
+  .container {
+    padding: 2rem; /* Mantener el espaciado amplio en pantallas grandes */
+  }
+
+  h2.text-center {
+    font-size: 1.75rem; /* Encabezado más grande para pantallas amplias */
+  }
+
+  .btn-primary,
+  .btn-error,
+  .btn-secondary {
+    font-size: 1rem;
+    padding: 10px 20px; /* Botones de mayor tamaño en pantallas grandes */
+  }
+
+  select.form-select,
+  input[type="file"] {
+    font-size: 1rem; /* Texto de tamaño estándar */
+  }
+}
